@@ -368,6 +368,10 @@ p {
   display: none;
 }
 @media (max-width: 991px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
   .toggle {
     display: block;
     position: relative;
@@ -436,10 +440,16 @@ p {
     padding: 0 50px;
   }
   .sec {
-    padding: 100px 50px 50px 50px;
+    /* padding: 100px 50px 50px 50px; */
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 20px;
   }
   .services .box {
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
   }
   .stats {
     padding-top: 250px;
